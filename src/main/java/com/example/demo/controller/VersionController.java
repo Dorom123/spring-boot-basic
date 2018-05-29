@@ -15,6 +15,7 @@ public class VersionController {
     @RequestMapping(path = "/minor", method = RequestMethod.POST)
     public String updateMajor() {
         Version.updateMinor();
+        
         return Version.getVerStr();
     }
 }
