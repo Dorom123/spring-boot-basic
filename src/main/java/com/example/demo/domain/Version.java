@@ -6,6 +6,10 @@ public class Version {
     private static int minor = 0;
     private static int patch = 0;
 
+    private Version(){
+        throw new IllegalStateException("Utility class");
+    }
+
     public static void reset() {
         major = 1;
         minor = 0;
